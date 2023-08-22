@@ -1,16 +1,24 @@
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-export default {
-  components: {
-    HelloWorld,
-  },
+  import AppHeader from './components/AppHeader.vue';
+  import AppMain from './components/AppMain.vue';
+  import AppFooter from './components/AppFooter.vue';
+
+  export default {
+    components: { AppHeader, AppMain, AppFooter },
+
+    setup() {
+
+      return{}
+    },
+    
 };
+
 </script>
 
 <template>
-  <div>
-    <HelloWorld />
-  </div>
+   <AppHeader/>
+   <AppMain/>
+   <AppFooter/>
 </template>
 
 <style lang="scss">
